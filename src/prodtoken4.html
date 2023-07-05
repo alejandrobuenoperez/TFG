@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Token Fin de Grado</title>
+	</head>
+	
+	<body>
+		<header class="bg-gray-800 text-white flex items-center justify-between px-4 py-3">
+			<a href="index.html" class="text-white text-xl font-semibold">Mi Sitio Web</a>
+			<nav>
+			  <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:text-gray-300">Inicio</a></li>
+				<li><a href="tienda.html" class="hover:text-gray-300">Tienda</a></li>
+				<li><a href="tiendatokens.html" class="hover:text-gray-300">Canjear tokens</a></li>
+				<li class="text-gray-300" id="Account"></li>
+			  </ul>
+			</nav>
+		</header>
+
+        <div class="container mx-auto flex items-center min-h-screen">
+            <div class="flex flex-col md:flex-row md:items-center">
+              <div class="mx-5 md:w-1/2">
+                <img src="/imgs/tienda_tokens/prod4t.jpg" alt="Producto" class="rounded-xl mx-auto my-4">
+              </div>
+              <div class="mx-5 md:w-1/2">
+                <h1 class="text-3xl font-bold mb-2">Corsair Vengeance LPX DDR4 3200 PC4-25600 16GB 2X8GB CL16 Negro</h1>
+                <p class="text-gray-700 text-xl mb-4">La memoria Corsair Vengeance LPX se ha diseñado para overclocking de alto rendimiento. El disipador de calor, fabricado en aluminio puro, permite una disipación térmica más rápida, la placa impresa de ocho capas administra el calor y proporciona una capacidad superior para incrementar el overclocking.</p>
+                <p class="text-gray-700 text-xl"><strong>Precio:</strong> 5 TFGs</p>
+                <a href="buyprodtoken4.html">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar con tokens</button>
+                </a>
+              </div>
+            </div>
+        </div>
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/web3.min.js"></script>
+		<script src="js/truffle-contract.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

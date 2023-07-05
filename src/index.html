@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Token Fin de Grado</title>
+	</head>
+	
+	<body class="justify-center items-center min-h-screen">
+		
+		<header class="bg-gray-800 text-white flex items-center justify-between px-4 py-3">
+			<a href="index.html" class="text-white text-xl font-semibold">Mi Sitio Web</a>
+			<nav>
+			  <ul class="flex space-x-4">
+				<li><a href="index.html" class="hover:text-gray-300">Inicio</a></li>
+				<li><a href="tienda.html" class="hover:text-gray-300">Tienda</a></li>
+				<li><a href="tiendatokens.html" class="hover:text-gray-300">Canjear tokens</a></li>
+				<li class="text-gray-300" id="Account"></li>
+			  </ul>
+			</nav>
+		</header>
+		
+		<div class="flex flex-col justify-center items-center min-h-screen m-5">
+			<div class="flex flex-col md:flex-row md:items-center">
+				<div class="basis-1/2 px-8">
+					<p class="text-5xl font-bold p-6">
+						Bienvenido a nuestra tienda!
+
+					</p>
+					<p class="text-3xl font-semibold p-6">
+						En nuestra página web puedes convertir tus compras en tokens y disfrutar de increíbles beneficios. ¿Cómo funciona?
+					</p>
+					<ul class="list-disc text-xl p-6">
+						<li><p class="py-1">Explora nuestra amplia selección de productos de alta calidad en la tienda.</p></li>
+						<li><p class="py-1">Por cada compra que realices recibirás tokens equivalentes al valor de tu compra.</p></li>
+						<li><p class="py-1">Acumula tus tokens y canjealos para obtener artículos gratis en nuestra tienda con tokens.</p></li>
+					</ul>
+					<div class="flex flex-row">
+						<a href="tienda.html" class="rounded-md bg-blue-100 px-4 py-2 m-4 hover:bg-blue-500">Tienda</a>
+						<a href="tiendatokens.html" class="rounded-md bg-blue-100 px-4 py-2 m-4 hover:bg-blue-500">Canjear tokens</a>
+					</div>
+				</div>
+				<div class="basis-1/2 px-8 bg-gray-100 rounded-md drop-shadow-lg p-6">
+					<div class="pb-8">
+						<div class="text-3xl font-bold pb-2">Tu saldo actual es de:</div>
+						<p class="text-2xl font-semibold"><span id="Balance"></span> TFGs</p>
+					</div>
+					<div>
+						<p class="text-xl pb-2">Enviar tokens</p>
+						<div class="flex flex-row">
+							<input type="text" class="basis-3/5 form-control bg-white rounded-md p-2 mr-1" id="TransferAddress" placeholder="Dirección" />
+							<input type="text" class="basis-1/5 form-control bg-white rounded-md p-2 mr-1" id="TransferAmount" placeholder="Cantidad" />
+							<button class="basis-1/5 bg-gray-700 text-white rounded-md btn btn-primary hover:bg-gray-800" id="transferButton" type="button">Transfer</button> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/web3.min.js"></script>
+		<script src="js/truffle-contract.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

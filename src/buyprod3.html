@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Token Fin de Grado</title>
+	</head>
+	
+	<body>
+		<header class="bg-gray-800 text-white flex items-center justify-between px-4 py-3">
+			<a href="index.html" class="text-white text-xl font-semibold">Mi Sitio Web</a>
+			<nav>
+			  <ul class="flex space-x-4">
+          <li><a href="index.html" class="hover:text-gray-300">Inicio</a></li>
+				<li><a href="tienda.html" class="hover:text-gray-300">Tienda</a></li>
+				<li><a href="tiendatokens.html" class="hover:text-gray-300">Canjear tokens</a></li>
+        <li class="text-gray-300" id="Account"></li>
+			  </ul>
+			</nav>
+		</header>
+
+        
+        <div class="container mx-auto py-4 px-4 flex flex-col justify-center md:justify-start md:px-8 md:my-16">
+            <h1 class="text-3xl font-bold mb-4">Formulario de Compra</h1>
+            <form class="max-w-lg">
+              <div class="mb-4">
+                <label class="block text-gray-700 text-lg font-bold mb-2" for="nombre">
+                  Nombre Completo
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nombre" type="text" placeholder="Ingresa tu nombre completo">
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 text-lg font-bold mb-2" for="tarjeta">
+                  Número de Tarjeta de Crédito o Débito
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="tarjeta" type="text" placeholder="Ingresa tu número de tarjeta">
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 text-lg font-bold mb-2" for="cvv">
+                  CVV
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="cvv" type="text" placeholder="Ingresa el código CVV de tu tarjeta">
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 text-lg font-bold mb-2" for="direccion-casa">
+                  Dirección de Casa
+                </label>
+                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="direccion-casa" rows="3" placeholder="Ingresa tu dirección de casa"></textarea>
+              </div>
+              <div class="mb-4">
+                <label class="block text-gray-700 text-lg font-bold mb-2" for="direccion-ethereum">
+                  Dirección de Ethereum
+                </label>
+                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="direccion-ethereum" type="text" placeholder="Ingresa tu dirección de Ethereum">
+                <p class="text-gray-500 text-sm mt-2">Nota: Se te enviarán 100 tokens a esta dirección.</p>
+              </div>
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4" type="button">Comprar</button>
+            </form>
+        </div> 
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/web3.min.js"></script>
+		<script src="js/truffle-contract.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

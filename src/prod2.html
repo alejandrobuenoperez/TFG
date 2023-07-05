@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<title>Token Fin de Grado</title>
+	</head>
+	
+	<body>
+		<header class="bg-gray-800 text-white flex items-center justify-between px-4 py-3">
+			<a href="index.html" class="text-white text-xl font-semibold">Mi Sitio Web</a>
+			<nav>
+			  <ul class="flex space-x-4">
+				<li><a href="index.html" class="hover:text-gray-300">Inicio</a></li>
+				<li><a href="tienda.html" class="hover:text-gray-300">Tienda</a></li>
+				<li><a href="tiendatokens.html" class="hover:text-gray-300">Canjear tokens</a></li>
+				<li class="text-gray-300" id="Account"></li>
+			  </ul>
+			</nav>
+		</header>
+
+        <div class="container mx-auto flex items-center min-h-screen">
+            <div class="flex flex-col md:flex-row md:items-center">
+              <div class="mx-5 md:w-1/2">
+                <img src="/imgs/tienda/prod2.jpg" alt="Producto" class="rounded-xl mx-auto my-4">
+              </div>
+              <div class="mx-5 md:w-1/2">
+                <h1 class="text-3xl font-bold mb-2">ASUS VivoBook 15 F1502ZA-EJ733 Intel Core i5</h1>
+                <p class="text-gray-700 text-xl mb-4">Imprima su estilo en el mundo con ASUS Vivobook 15, la computadora portátil repleta de funciones que facilita hacer las cosas en cualquier lugar. Todo en Vivobook 15 es audaz y mejorado, desde su potente procesador Intel® Core™ de 12.ª generación hasta su pantalla nítida y clara, bisagra plana de 180°, colores modernos y diseño geométrico elegante. ¡Comience de nuevo hoy con Vivobook 15!</p>
+                <p class="text-gray-700 text-xl"><strong>Precio:</strong> $600</p>
+                <p class="text-gray-700 text-lg"><strong>Tokens a recibir:</strong> 60 TFGs</p>
+                <a href="buyprod2.html">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Comprar</button>
+                </a>
+              </div>
+            </div>
+        </div>
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/web3.min.js"></script>
+		<script src="js/truffle-contract.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

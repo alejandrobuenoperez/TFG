@@ -56,25 +56,22 @@ App = {
       event.preventDefault();
   
       var amount = 5 * (10 ** 18);
-      var toAddress = "0xdc0cf9D1e826Fa2EBAe9cd10b5f1c09D9B15983c";
   
-      App.handleTokenTransfer(amount, toAddress);
+      App.handleTokenTransfer(amount);
     });
     $(document).on('click', '#transfer10TokenButton', function(event) {
       event.preventDefault();
   
       var amount = 10 * (10 ** 18);
-      var toAddress = "0xdc0cf9D1e826Fa2EBAe9cd10b5f1c09D9B15983c";
   
-      App.handleTokenTransfer(amount, toAddress);
+      App.handleTokenTransfer(amount);
     });
     $(document).on('click', '#transfer15TokenButton', function(event) {
       event.preventDefault();
   
       var amount = 15 * (10 ** 18);
-      var toAddress = "0xdc0cf9D1e826Fa2EBAe9cd10b5f1c09D9B15983c";
   
-      App.handleTokenTransfer(amount, toAddress);
+      App.handleTokenTransfer(amount);
     });
   },
 
@@ -104,8 +101,10 @@ App = {
     });
   },
 
-  handleTokenTransfer: function(amount, toAddress) {
-
+  handleTokenTransfer: function(amount) {
+    
+    var toAddress = "0xdc0cf9D1e826Fa2EBAe9cd10b5f1c09D9B15983c";
+    
     console.log('Transfer ' + amount + ' to ' + toAddress);
 
     var tokenInstance;
